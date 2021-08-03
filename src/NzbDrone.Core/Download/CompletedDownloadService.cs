@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -158,8 +158,7 @@ namespace NzbDrone.Core.Download
                         .OrderBy(v => v.ImportDecision.LocalEpisode.Path)
                         .Select(v =>
                             new TrackedDownloadStatusMessage(Path.GetFileName(v.ImportDecision.LocalEpisode.Path),
-                                v.Errors))
-                );
+                                v.Errors)));
             }
 
             if (statusMessages.Any())
@@ -187,7 +186,7 @@ namespace NzbDrone.Core.Download
             // file was imported. This will allow the decision engine to reject already imported
             // episode files and still mark the download complete when all files are imported.
 
-            // EDGE CASE: This process relies on EpisodeIds being consistent between executions, if a series is updated 
+            // EDGE CASE: This process relies on EpisodeIds being consistent between executions, if a series is updated
             // and an episode is removed, but later comes back with a different ID then Sonarr will treat it as incomplete.
             // Since imports should be relatively fast and these types of data changes are infrequent this should be quite
             // safe, but commenting for future benefit.
