@@ -18,7 +18,7 @@
     <PackageReference Include="TinyTwitter" Version="1.1.2" />
     <PackageReference Include="xmlrpcnet" Version="3.0.0.266" />
     <PackageReference Include="MonoTorrent" Version="2.0.5" />
-    <PackageReference Include="System.Data.SQLite.Core.Servarr" Version="1.0.115.0-0" />
+    <PackageReference Include="System.Data.SQLite.Core.Servarr" Version="1.0.115.5-18" />
     <PackageReference Include="System.Text.Json" Version="6.0.2" />
     <PackageReference Include="MonoTorrent" Version="1.0.29" />
   </ItemGroup>
